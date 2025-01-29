@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumLeap - 量子コンピューティングサービス</title>
+    <style>
+        /* ベーススタイル */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(to bottom, #003A8C, #096DD9);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* ヘッダー */
+        header {
+            background-color: rgba(0, 80, 179, 0.5);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #40A9FF;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #E6F7FF;
+        }
+        /* ヒーローセクション */
+        .hero {
+            text-align: center;
+            padding: 8rem 0 4rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        /* 特徴セクション */
+        .features {
+            background-color: rgba(0, 80, 179, 0.3);
+            padding: 4rem 0;
+        }
+        .features h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            background-color: rgba(9, 109, 217, 0.5);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .feature-card i {
+            font-size: 3rem;
+            color: #40A9FF;
+            margin-bottom: 1rem;
+        }
+        /* 利点セクション */
+        .benefits {
+            padding: 4rem 0;
+        }
+        .benefits h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .benefit-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: center;
+        }
+        .benefit-item i {
+            color: #40A9FF;
+            margin-right: 1rem;
+        }
+        /* お問い合わせフォーム */
+        .contact {
+            background-color: rgba(0, 80, 179, 0.3);
+            padding: 4rem 0;
+        }
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #40A9FF;
+            background-color: rgba(9, 109, 217, 0.5);
+            color: #ffffff;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #1890FF;
+            color: #ffffff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #40A9FF;
+        }
+        /* フッター */
+        footer {
+            background-color: #003A8C;
+            color: #BAE7FF;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">QuantumLeap</div>
+            <ul>
+                <li><a href="#features">特徴</a></li>
+                <li><a href="#benefits">利点</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>量子の力でビジネスを加速</h1>
+                <p>QuantumLeapは、最先端の量子コンピューティング技術を活用し、複雑な問題を解決し、ビジネスの可能性を広げます。</p>
+                <button>今すぐ始める</button>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>サービスの特徴</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-microchip"></i>
+                        <h3>高度な量子アルゴリズム</h3>
+                        <p>最適化、機械学習、暗号解読など、様々な分野で革新的なソリューションを提供します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>量子暗号技術</h3>
+                        <p>次世代の暗号化技術で、データを最高レベルのセキュリティで保護します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>超高速計算</h3>
+                        <p>従来のコンピュータでは数年かかる計算を、数分で処理します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="benefits">
+            <div class="container">
+                <h2>量子コンピューティングの利点</h2>
+                <div class="benefit-list">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>複雑な問題の高速解決</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>ビッグデータの効率的な分析</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>新薬開発の加速</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>金融モデリングの精度向上</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>AIと機械学習の性能向上</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>サプライチェーンの最適化</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">送信</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 QuantumLeap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script>
+        // フォーム送信のハンドリング
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            console.log('Form submitted:', Object.fromEntries(formData));
+            // ここで実際のフォーム送信処理を行う
+            alert('お問い合わせありがとうございます。まもなくご連絡いたします。');
+            this.reset();
+        });
+
+        // スムーズスクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
